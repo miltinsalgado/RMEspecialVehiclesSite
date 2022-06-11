@@ -8,7 +8,7 @@ Criei meu primeiro site com mais de uma página HTML. Esse projeto consiste em u
 
 ### 🖼️ Prévia do Projeto 🖼️
 <div align="center">
-    <video width="1280" height="720" controls>
+    <video controls>
        <source src="videos/site_rm_special_vehicles_preview.mkv"  type="video/x-matroska">
     </video>
 </div>
