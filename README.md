@@ -8,7 +8,7 @@ Criei meu primeiro site com mais de uma página HTML. Esse projeto consiste em u
 
 ### 🖼️ Prévia do Projeto 🖼️
 <div align="center">
-    <img height="800em" src="images/landing_page_fernanda_dentist.png">
+    <img height="800em" src="">
 </div>
 
 ##
