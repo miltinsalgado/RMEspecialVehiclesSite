@@ -150,7 +150,7 @@ header .container nav.mobile-menu:hover ul{
 
 section.banner{
     width: 100%;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 130px);
     min-height: 600px;
     background-color: black;
     background-image: url("../images/bg.jpg");
@@ -801,7 +801,6 @@ section.sales .container .sales-content aside .year-search .year-wrapper input[t
 }
 
 section.sales .container .sales-content aside .year-search .year-wrapper span{
-    padding: 0 10px;
     display: inline-block;
     vertical-align: top;
 }
