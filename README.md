@@ -21,6 +21,7 @@ Criei meu primeiro site com mais de uma página HTML. Esse projeto consiste em u
   <hr>
   <br>
   <img height="600em" src="images/demo/site_rm_special_vehicles_sobre.jpg">
+</div>
 
 ##
 
