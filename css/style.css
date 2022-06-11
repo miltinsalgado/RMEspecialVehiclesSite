@@ -852,10 +852,6 @@ section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info:
     background-image: url("../images/car_gallery/volkswagen_brasilia.webp");
 }
 
-section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info .catalog-car-text{
-    align-items: center;
-}
-
 section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info .catalog-car-text *{
     margin-top: 10px;
 }
