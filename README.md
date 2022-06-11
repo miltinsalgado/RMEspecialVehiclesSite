@@ -4,7 +4,7 @@
 
 Criei meu primeiro site com mais de uma página HTML. Esse projeto consiste em uma página de comércio e consultoria de veículos.
 
-##
+<hr>
 
 ### 🖼️ Prévia do Projeto 🖼️
 <div align="center">
@@ -23,7 +23,7 @@ Criei meu primeiro site com mais de uma página HTML. Esse projeto consiste em u
   <img height="600em" src="images/demo/site_rm_special_vehicles_sobre.jpg">
 </div>
 
-##
+<hr>
 
 ### 📖 Descrição do Projeto 📖
 
@@ -31,7 +31,7 @@ O projeto é baseado em outro projeto feito pela equipe do professor Guilherme G
 
 Por ser um site e não uma landing page, ele contém 4 páginas: index, sobre, venda e venda_veiculo. Todo o site possui o design 100% responsivo, através das media queries e ao display flex, o qual eu venho utilizando cada vez mais e aprimorando. O site possui o design pronto para receber JS em suas galerias, sliders e nos menus. Uma novidade desse projeto é a padronização do header e do footer em cada uma de suas páginas, além de espaçamentos mais agradáveis. Também pude estudar mais sobre backgrounds e imagens para melhor visualização e customização do site.
 
-##
+<hr>
 
 ### 🛠️ Tecnologias aprendidas e utilizadas 🛠️
 
@@ -40,7 +40,7 @@ Por ser um site e não uma landing page, ele contém 4 páginas: index, sobre, v
   <img align="center" alt="Miltin-CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg">
 </div>
 
-##
+<hr>
 
 Agradeço a sua atenção e leitura deste documento!
 
