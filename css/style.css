@@ -1,0 +1,1199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+html, body{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
+/*-------------*/
+
+/* general divs */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*-------------*/
+
+/* header */
+
+header{
+    width: 100%;
+    height: 130px;
+    padding: 20px 2%;
+    border-bottom: 3px solid #EB2D2D;
+}
+
+header .container .logo{
+    float: left;
+    width: 208px;
+    height: 82px;
+    background-image: url("../images/logo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .container nav.desktop-menu{
+    float: right;
+}
+
+header .container nav.desktop-menu ul{
+    list-style: none;
+}
+
+header .container nav.desktop-menu ul li{
+    float: left;
+    margin: 30px;
+    font-size: 23px;
+    font-style: italic;
+}
+
+header .container nav.mobile-menu ul{
+    width: 100%;
+    left: 0;
+    top: 130px;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+}
+
+header .container nav.mobile-menu ul li{
+    font-size: 23px;
+    font-style: italic;
+    padding: 2%;
+    border-bottom: 3px solid black;
+}
+
+header .container nav.mobile-menu ul li:hover{
+    background-color: whitesmoke;
+}
+
+header .container nav.desktop-menu ul li a, header .container nav.mobile-menu ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+header .container nav.desktop-menu ul li a:hover{
+    font-weight: bold;
+}
+
+header .container nav.desktop-menu ul li a.active, header .container nav.mobile-menu ul li a.active{
+    color: #EB2D2D;
+}
+
+header .container nav.mobile-menu{
+    float: right;
+    display: none;
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/icons/icons8-menu-96.png");
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+header .container nav.mobile-menu ul{
+    list-style: none;
+    opacity: 0;
+    transition: 2s;
+}
+
+header .container nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+
+    header .container nav.desktop-menu{
+        display: none;
+    }
+
+    header .container nav.mobile-menu{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+
+    header .container .logo{
+        width: 182px;
+        height: 72px;
+        margin-top: 10px;
+    }
+
+}
+
+/*-------------*/
+
+/* section.banner */
+
+section.banner{
+    width: 100%;
+    height: calc(100vh - 140px);
+    min-height: 600px;
+    background-color: black;
+    background-image: url("../images/bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
+    z-index: -1;
+}
+
+section.banner .container .banner-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+}
+
+section.banner .container .banner-text .text-single{
+    background-color: #EB2D2D;
+    width: fit-content;
+    padding: 10px 30px 10px 20px;
+    margin: auto auto 40px 0;
+}
+
+section.banner .container .banner-text .text-single:nth-child(1){
+    transform: translateX(30px) skew(-10deg);
+}
+
+section.banner .container .banner-text .text-single:nth-child(2){
+    transform: translateX(20px) skew(-10deg);
+}
+
+section.banner .container .banner-text .text-single:nth-child(3){
+    transform: translateX(10px) skew(-10deg);
+}
+
+section.banner .container .banner-text .text-single:nth-child(4){
+    background-color: white;
+    transform: skew(-10deg);
+}
+
+section.banner .container .banner-text .text-single p{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    transform: skew(10deg);
+}
+
+section.banner .container .banner-text .text-single:nth-child(4) p{
+    color: black;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1024px){
+
+    section.banner{
+        background-position: left bottom;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    section.banner{
+        position: static;
+        max-height: 900px;
+    }
+
+    section.banner .container .banner-text{
+        position: static;
+        transform: translateY(37.5%);
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section.banner .container .banner-text .text-single{
+        margin: auto auto 30px auto;
+    }
+
+    section.banner .container .banner-text .text-single:nth-child(1){
+        transform: translateX(0) skew(0);
+    }
+    
+    section.banner .container .banner-text .text-single:nth-child(2){
+        transform: translateX(0) skew(0);
+    }
+    
+    section.banner .container .banner-text .text-single:nth-child(3){
+        transform: translateX(0) skew(0);
+    }
+
+    section.banner .container .banner-text .text-single:nth-child(4){
+        transform: skew(0);
+    }
+
+    section.banner .container .banner-text .text-single p{
+        transform: skew(0);
+    }
+
+}
+
+/*-------------*/
+
+/* section.featured-cars */
+
+section.featured-cars{
+    padding: 90px 2% 45px 2%;
+}
+
+section.featured-cars .container .title-line{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+section.featured-cars .container .title-line .line{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 20px;
+    background-color: black;
+}
+
+section.featured-cars .container .title-line h2{
+    position: relative;
+    font-size: 27px;
+    font-style: italic;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: white;
+}
+
+section.featured-cars .container .featured-cars-gallery{
+    display: flex;
+    padding: 90px 2% 45px 2%;
+}
+
+section.featured-cars .container .featured-cars-gallery .featured-car-info{
+    text-align: center;
+    padding: 0 2%;
+    width: calc(100% / 3);
+}
+
+section.featured-cars .container .featured-cars-gallery .featured-car-info .featured-car-img{
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 75%;
+}
+
+section.featured-cars .container .featured-cars-gallery .featured-car-info:nth-child(1) .featured-car-img{
+    background-image: url("../images/car_gallery/volkswagen_karmann_ghia.webp");
+}
+
+section.featured-cars .container .featured-cars-gallery .featured-car-info:nth-child(2) .featured-car-img{
+    background-image: url("../images/car_gallery/chevrolet_opala.webp");
+}
+
+section.featured-cars .container .featured-cars-gallery .featured-car-info:nth-child(3) .featured-car-img{
+    background-image: url("../images/car_gallery/volkswagen_gol_gts.webp");
+}
+
+section.featured-cars .container .featured-cars-gallery .featured-car-info .featured-car-text *{
+    margin-top: 10px;
+}
+
+section.featured-cars .container .featured-cars-gallery .featured-car-info .featured-car-text p{
+    color: #363636;
+    font-size: 14px;
+}
+
+section.featured-cars .container .featured-cars-gallery .featured-car-info .featured-car-text a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #EB2D2D;
+    border-top: 3px solid #FF5959;
+    border-bottom: 3px solid #891A1A;
+}
+
+@media screen and (max-width: 768px){
+
+    section.featured-cars .container .featured-cars-gallery{
+        padding: 45px 2%;
+        flex-direction: column;
+    }
+
+    section.featured-cars .container .featured-cars-gallery .featured-car-info{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/*-------------*/
+
+/* section.rating */
+
+section.rating .container{
+    max-width: 100%;
+}
+
+section.rating .container .panel{
+    display: flex;
+}
+
+section.rating .container .panel .services{
+    width: 50%;
+    background-color: #242424;
+    padding: 75px 7.5%;
+}
+
+section.rating .container .panel .services *{
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+section.rating .container .panel .services h2{
+    font-size: 27px;
+}
+
+section.rating .container .panel .services .services-text{
+    margin-top: 20px;
+}
+
+section.rating .container .panel .services .services-text ul{
+    list-style-position: inside;
+    float: left;
+}
+
+section.rating .container .panel .services .services-text a{
+    display: block;
+    float: right;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #EB2D2D;
+    border-top: 3px solid #FF5959;
+    border-bottom: 3px solid #891A1A;
+    transform: translateY(150%);
+}
+
+section.rating .container .panel .depositions{
+    width: 50%;
+    background-color: #EB2D2D;
+    padding: 75px 7.5%;
+    min-height: 200px;
+}
+
+section.rating .container .panel .depositions *{
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+section.rating .container .panel .depositions h2{
+    font-size: 27px;
+}
+
+section.rating .container .panel .depositions .depositions-text{
+    margin-top: 20px;
+}
+
+section.rating .container .panel .depositions .depositions-text .text-slider-line{
+    margin-top: 20px;
+}
+
+section.rating .container .panel .depositions .depositions-text .text-slider-line .arrows{
+    float: left;
+}
+
+section.rating .container .panel .depositions .depositions-text .text-slider-line .arrows .left, section.rating .container .panel .depositions .depositions-text .text-slider-line .arrows .right{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+section.rating .container .panel .depositions .depositions-text .text-slider-line .arrows .left{
+    background-image: url("../images/icons/icons8-sort-left-96.png");
+    margin-right: 5px;
+}
+
+section.rating .container .panel .depositions .depositions-text .text-slider-line .arrows .right{
+    background-image: url("../images/icons/icons8-sort-right-96.png");
+    margin-left: 5px;
+}
+
+section.rating .container .panel .depositions .depositions-text .text-slider-line p{
+    color: #242424;
+    float: right;
+}
+
+@media screen and (max-width: 1280px){
+
+    section.rating .container .panel .services .services-text ul{
+        float: none;
+        text-align: left;
+    }
+    
+    section.rating .container .panel .services .services-text a{
+        float: none;
+        display: inline-block;
+        transform: translateY(0);
+        margin: 20px auto 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    section.rating .container .panel{
+        flex-direction: column;
+    }
+
+    section.rating .container .panel .services{
+        width: 100%;
+        text-align: center;
+    }
+
+    section.rating .container .panel .services .services-text ul{
+        list-style: none;
+        text-align: center;
+    }
+
+    section.rating .container .panel .services .services-text ul li{
+        margin: 10px 0;
+    }
+
+    section.rating .container .panel .depositions{
+        text-align: center;
+        width: 100%;
+    }
+
+    section.rating .container .panel .depositions .depositions-text .text-slider-line .arrows{
+        float: none;
+    }
+    
+    section.rating .container .panel .depositions .depositions-text .text-slider-line p{
+        float: none;
+    }
+
+}
+
+/*-------------*/
+
+/* section.contact */
+
+section.contact{
+    padding: 45px 2%;
+}
+
+section.contact .container{
+    max-width: 700px;
+}
+
+section.contact .container .title-line{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+section.contact .container .title-line .line{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 20px;
+    background-color: black;
+}
+
+section.contact .container .title-line h2{
+    position: relative;
+    font-size: 27px;
+    font-style: italic;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: white;
+}
+
+section.contact .container .form{
+    padding: 45px 2%;
+}
+
+section.contact .container .form form .form-wrapper{
+    float: left;
+    padding: 10px;
+}
+
+section.contact .container .form form .form-wrapper:nth-of-type(6){
+    text-align: center;
+    padding: 0;
+}
+
+section.contact .container .form form .form-wrapper input{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+section.contact .container .form form .form-wrapper textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 120px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+section.contact .container .form form .form-wrapper input[type="submit"]{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-style: normal;
+    background-color: #EB2D2D;
+    border-top: 3px solid #FF5959;
+    border-bottom: 3px solid #891A1A;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 50px;
+}
+
+section.contact .container .form form .w50{
+    width: 50%;
+}
+
+section.contact .container .form form .w100{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+
+    section.contact .container .form form .w50{
+        width: 100%;
+    }
+    
+}
+
+/*-------------*/
+
+/* footer */
+
+footer{
+    width: 100%;
+    padding: 45px 2%;
+    background-color: #242424;
+    font-style: italic;
+}
+
+footer *{
+    color: white;
+}
+
+footer .container nav.desktop-menu{
+    float: left;
+}
+
+footer .container nav.desktop-menu ul{
+    list-style: none;
+}
+
+footer .container nav.desktop-menu ul li{
+    float: left;
+    font-size: 23px;
+    margin: 0 20px;
+}
+
+footer .container nav.desktop-menu ul li a{
+    text-decoration: none;
+}
+
+footer .container nav.desktop-menu ul li a.active{
+    color: #EB2D2D;
+}
+
+footer .container nav.desktop-menu ul li a:hover{
+    font-weight: bold;
+}
+
+footer .container .footer-text{
+    float: right;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px){
+
+    footer{
+        padding: 45px 0;
+    }
+
+    footer .container nav.desktop-menu{
+        float: none;
+        display: none;
+    }
+
+    footer .container .footer-text{
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+    
+}
+
+/*-------------*/
+
+/* section.sales */
+
+section.sales{
+    min-height: 90%;
+    padding: 45px 2%;
+}
+
+section.sales .container .title-line{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+section.sales .container .title-line .line{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 20px;
+    background-color: black;
+}
+
+section.sales .container .title-line h2{
+    position: relative;
+    font-size: 27px;
+    font-style: italic;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: white;
+}
+
+section.sales .container .sales-content{
+    margin-top: 45px;
+}
+
+section.sales .container .sales-content aside{
+    padding: 0 2%;
+    float: left;
+    width: 30%;
+}
+
+section.sales .container .sales-content aside *{
+    font-weight: normal;
+}
+
+section.sales .container .sales-content aside .price-search{
+    max-width: 300px;
+}
+
+section.sales .container .sales-content aside .price-search h2{
+    font-size: 24px;
+}
+
+section.sales .container .sales-content aside .price-search .price-bar{
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid #CCC;
+    border-radius: 20px;
+    position: relative;
+}
+
+section.sales .container .sales-content aside .price-search .price-bar .price-bar-fill{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+section.sales .container .sales-content aside .price-search .price-bar .pointer-bar{
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    border: 1px solid #777;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+    position: absolute;
+    left: calc(30% - 13px);
+    top: -3px;
+    cursor: pointer;
+}
+
+section.sales .container .sales-content aside .price-search .search-value{
+    margin-top: 8px;
+}
+
+section.sales .container .sales-content aside .price-search .search-value p:nth-of-type(1){
+    float: left;
+}
+
+section.sales .container .sales-content aside .price-search .search-value p:nth-of-type(2){
+    float: right;
+}
+
+section.sales .container .sales-content aside .year-search{
+    margin-top: 40px;
+}
+
+section.sales .container .sales-content aside .year-search .year-wrapper{
+    margin-top: 10px;
+}
+
+section.sales .container .sales-content aside .year-search .year-wrapper input[type="checkbox"]{
+    display: none;
+}
+
+section.sales .container .sales-content aside .year-search .year-wrapper label{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section.sales .container .sales-content aside .year-search .year-wrapper label .circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    transform: translate(62.5%, 62.5%);
+    display: none;
+}
+
+section.sales .container .sales-content aside .year-search .year-wrapper input[type="checkbox"]:checked + label .circle{
+    display: block;
+}
+
+section.sales .container .sales-content aside .year-search .year-wrapper span{
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+section.sales .container .sales-content .catalog-cars-gallery{
+    float: right;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info{
+    text-align: center;
+    width: calc(100% / 3);
+    padding: 2%;
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info .catalog-car-img{
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 75%;
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info:nth-child(1) .catalog-car-img{
+    background-image: url("../images/car_gallery/volkswagen_karmann_ghia.webp");
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info:nth-child(2) .catalog-car-img{
+    background-image: url("../images/car_gallery/chevrolet_opala.webp");
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info:nth-child(3) .catalog-car-img{
+    background-image: url("../images/car_gallery/volkswagen_gol_gts.webp");
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info:nth-child(4) .catalog-car-img{
+    background-image: url("../images/car_gallery/mustang_hard_top.webp");
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info:nth-child(5) .catalog-car-img{
+    background-image: url("../images/car_gallery/volkswagen_fusca.webp");
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info:nth-child(6) .catalog-car-img{
+    background-image: url("../images/car_gallery/volkswagen_brasilia.webp");
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info .catalog-car-text{
+    align-items: center;
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info .catalog-car-text *{
+    margin-top: 10px;
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info .catalog-car-text p{
+    color: #363636;
+    font-size: 14px;
+}
+
+section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info .catalog-car-text a{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #EB2D2D;
+    border-top: 3px solid #FF5959;
+    border-bottom: 3px solid #891A1A;
+}
+
+@media screen and (max-width: 768px){
+
+    section.sales .container .sales-content aside{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 2%;
+    }
+
+    section.sales .container .sales-content aside .price-search{
+        display: inline-block;
+        width: 100%;
+        max-width: none;
+    }
+
+    section.sales .container .sales-content aside .year-search{
+        display: inline-block;
+        text-align: left;
+    }
+
+    section.sales .container .sales-content aside .year-search h2{
+        text-align: center;
+    }
+
+    section.sales .container .sales-content .catalog-cars-gallery{
+        float: none;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    section.sales .container .sales-content .catalog-cars-gallery .catalog-car-info{
+        width: 100%;
+    }
+}
+
+/*-------------*/
+
+/* section.single-sale */
+
+section.single-sale .container{
+    padding: 90px 2% 0 2%;
+    text-align: center;
+}
+
+section.single-sale .container .title-line{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+section.single-sale .container .title-line .line{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 20px;
+    background-color: black;
+}
+
+section.single-sale .container .title-line h2{
+    position: relative;
+    font-size: 27px;
+    font-style: italic;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: white;
+}
+
+section.single-sale .container .vehicle{
+    padding-top: 45px;
+}
+
+section.single-sale .container .vehicle .vehicle-info{
+    display: inline-block;
+    width: 60%;
+}
+
+section.single-sale .container .vehicle .vehicle-info .info-bread{
+    text-align: left;
+}
+
+section.single-sale .container .vehicle .vehicle-info .info-bread a{
+    text-decoration: none;
+    color: black;
+}
+
+section.single-sale .container .vehicle .vehicle-info .info-bread a:hover{
+    font-weight: bold;
+}
+
+section.single-sale .container .vehicle .vehicle-info .info-bread a.active{
+    color: #EB2D2D;
+}
+
+section.single-sale .container .vehicle .vehicle-info .info-bread span{
+    padding: 0 10px;
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-featured-image{
+    width: 100%;
+    padding-top: 60%;
+    background-image: url("../images/car-silhouette.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-gallery{
+    width: 100%;
+    padding: 36px;
+    position: relative;
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-gallery .arrow-left-nav{
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 48px;
+    height: 48px;
+    transform: translateY(-50%);
+    background-image: url("../images/icons/icons8-sort-left-96.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-gallery .arrow-right-nav{
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    width: 48px;
+    height: 48px;
+    transform: translateY(-50%);
+    background-image: url("../images/icons/icons8-sort-right-96.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-gallery .vehicle-gallery-nav{
+    width: 100%;
+    overflow: hidden;
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-gallery .vehicle-gallery-nav .vehicle-gallery-nav-wrapper{
+    width: 200%;
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-gallery .vehicle-gallery-nav .vehicle-gallery-nav-wrapper .vehicle-image-wrapper{
+    float: left;
+    padding: 9px;
+    width: calc(33.3% * (100 / 200));
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-gallery .vehicle-gallery-nav .vehicle-gallery-nav-wrapper .vehicle-image-wrapper .vehicle-image{
+    background-image: url("../images/car-silhouette.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70%;
+    cursor: pointer;
+}
+
+section.single-sale .container .vehicle .vehicle-info .vehicle-gallery .vehicle-gallery-nav .vehicle-gallery-nav-wrapper .vehicle-image-wrapper:nth-child(1) .vehicle-image{
+    border: 4px solid rgb(210, 210, 210);
+}
+
+section.single-sale .container .vehicle .vehicle-description{
+    display: inline-block;
+    padding: 60px 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+section.single-sale .container .vehicle .vehicle-description p{
+    font-size: 17px;
+    margin-top: 25px;
+    max-width: 200px;
+}
+
+section.single-sale .container .vehicle .vehicle-description a{
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #EB2D2D;
+    border-top: 3px solid #FF5959;
+    border-bottom: 3px solid #891A1A;
+}
+
+@media screen and (max-width: 768px){
+
+    section.single-sale .container .vehicle .vehicle-info{
+        width: 100%;
+    }
+
+    section.single-sale .container .vehicle .vehicle-description{
+        text-align: center;
+        padding: 2% 0;
+    }
+
+    section.single-sale .container .vehicle .vehicle-description p{
+        max-width: none;
+    }
+
+}
+
+/*-------------*/
+
+/* section.about */
+
+section.about{
+    min-height: 90%;
+    padding: 90px 2%;
+}
+
+section.about .container .title-line{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+section.about .container .title-line .line{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 20px;
+    background-color: black;
+}
+
+section.about .container .title-line h2{
+    position: relative;
+    font-size: 27px;
+    font-style: italic;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: white;
+}
+
+section.about .container .about-content{
+    width: 75%;
+    margin: 0 auto;
+    padding: 45px 4% 0 4%;
+}
+
+section.about .container .about-content .banner{
+    padding-top: 62.5%;
+    background-color: #CCC;
+
+}
+
+section.about .container .about-content .info *{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+section.about .container .about-content .info h2{
+    text-align: center;
+    font-style: italic;
+}
+
+section.about .container .about-content .info .author{
+    display: flex;
+}
+
+section.about .container .about-content .info .author .author-image{
+    background-color: #CCC;
+    width: 30%;
+}
+
+section.about .container .about-content .info .author p{
+    width: 70%;
+    padding: 2%;
+}
+
+@media screen and (max-width: 992px){
+
+    section.about .container .about-content{
+        text-align: center;
+    }
+
+    section.about .container .about-content .info .author{
+        flex-wrap: wrap;
+    }
+
+    section.about .container .about-content .info .author .author-image{
+        width: 50%;
+        padding-top: 50%;
+        margin: 0 auto;
+    }
+    
+    section.about .container .about-content .info .author p{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    section.about .container .about-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+
+/*-------------*/
