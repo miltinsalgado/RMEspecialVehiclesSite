@@ -90,14 +90,19 @@ header .container nav.mobile-menu ul li:hover{
 header .container nav.desktop-menu ul li a, header .container nav.mobile-menu ul li a{
     color: black;
     text-decoration: none;
+    transition: text-shadow 0.3s;
 }
 
 header .container nav.desktop-menu ul li a:hover{
-    font-weight: bold;
+    text-shadow: 0 0 .65px black, 0 0 .65px black;
 }
 
 header .container nav.desktop-menu ul li a.active, header .container nav.mobile-menu ul li a.active{
     color: #EB2D2D;
+}
+
+header .container nav.desktop-menu ul li a.active:hover, header .container nav.mobile-menu ul li a.active:hover{
+    text-shadow: 0 0 .65px #EB2D2D, 0 0 .65px #EB2D2D;
 }
 
 header .container nav.mobile-menu{
@@ -633,6 +638,8 @@ footer .container nav.desktop-menu ul li{
 
 footer .container nav.desktop-menu ul li a{
     text-decoration: none;
+    color: white;
+    transition: text-shadow 0.3s;
 }
 
 footer .container nav.desktop-menu ul li a.active{
@@ -640,7 +647,11 @@ footer .container nav.desktop-menu ul li a.active{
 }
 
 footer .container nav.desktop-menu ul li a:hover{
-    font-weight: bold;
+    text-shadow: 0 0 .65px white, 0 0 .65px white;
+}
+
+footer .container nav.desktop-menu ul li a.active:hover{
+    text-shadow: 0 0 .65px #EB2D2D, 0 0 .65px #EB2D2D;
 }
 
 footer .container .footer-text{
