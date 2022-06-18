@@ -4,7 +4,7 @@
 
 Criei meu primeiro site com mais de uma página HTML. Esse projeto consiste em uma página de comércio e consultoria de veículos baseada em um site feito pela Danki Code para a RM Veículos Especiais. Para melhor visualização, as imagens foram retiradas do site da The Garage, portanto todas as fotos são de sua autoria.
 
-Link de referência e direitos autorais: https://thegarage.com.brhttps://thegarage.com.br
+Link de referência e direitos autorais: https://thegarage.com.br
 
 <hr>
 
