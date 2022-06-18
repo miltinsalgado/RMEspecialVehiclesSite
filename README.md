@@ -8,6 +8,12 @@ Link de referência e direitos autorais: https://thegarage.com.br
 
 <hr>
 
+### 🚀 Apresentação do Projeto 🚀
+
+<a target="_blank" href="https://www.linkedin.com/posts/milton-salgado-0630a1215_html-css-dev-activity-6943985960418197504-QgFp?utm_source=linkedin_share&utm_medium=member_desktop_web">Link para a Apresentação do Projeto<a>
+
+<hr>
+
 ### 🖼️ Prévia do Projeto 🖼️
 
 <div align="center">
